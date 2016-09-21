@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TypefaceView"><attr format="enum" name="tv_typeface"><enum name="roboto_regular" value="0"/><enum name="roboto_medium" value="1"/><enum name="roboto_light" value="2"/><enum name="roboto_bold" value="3"/><enum name="roboto_thin" value="4"/></attr><attr format="boolean" name="tv_html"/></declare-styleable>
+    <!-- From: file:/Users/stoyan/git/TypefaceView/lib/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">TypefaceView</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/round_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+</LinearLayout>
+<!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/lib/src/main/res/layout/view_round_pin_code.xml -->

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fromXDelta="0"
+    android:interpolator="@anim/cycle5"
+    android:toXDelta="10" /><!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/lib/src/main/res/anim/shake.xml -->

@@ -1,0 +1,89 @@
+import java.util.regex.Pattern
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    def versionPropsFile = file('version.properties')
+
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+
+        versionProps.load(new FileInputStream(versionPropsFile))
+        def value = 0
+        def runTasks = gradle.startParameter.taskNames
+        if ('assemble' in runTasks || 'assembleRelease' in runTasks || 'assembleDebug' in runTasks || 'aR' in runTasks) {
+            value = 1;
+        }
+
+        def version_Name = versionProps['versionMajor'].toInteger()+'.'+versionProps['versionMinor'].toInteger()
+        def version_Build = versionProps['versionBuild'].toInteger() + value
+
+        versionProps['versionBuild'] = version_Build.toString()
+
+        versionProps.store(versionPropsFile.newWriter(), null)
+        defaultConfig {
+            applicationId "com.paras.choo"
+            versionCode version_Build
+            versionName version_Name.toString()
+            minSdkVersion 10
+            targetSdkVersion 22
+        }
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    compile 'com.android.support:appcompat-v7:22.1.0'
+    compile 'se.emilsjolander:StickyScrollViewItems:+'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+    compile 'com.github.omadahealth.typefaceview:typefaceview:1.3.0@aar'
+    compile 'com.google.android.gms:play-services:4.2.42'
+    //Lollipop dialogs https://github.com/lewisjdeane/L-Dialogs and buttons, animations etc...
+    compile 'uk.me.lewisdeane.ldialogs:ldialogs:1.2.0@aar'
+    //test
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.2.+'
+    compile project(':lib')
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+    compile files('libs/twitter4j-core-4.0.4.jar')
+//    compile 'com.google.android.gms:play-services:8.1.0'
+    compile('com.crashlytics.sdk.android:crashlytics-ndk:1.1.1@aar') {
+        transitive = true;
+    }
+}
+
+crashlytics {
+    enableNdk true
+    androidNdkOut 'src/main/obj'
+    androidNdkLibsOut 'src/main/libs'
+}

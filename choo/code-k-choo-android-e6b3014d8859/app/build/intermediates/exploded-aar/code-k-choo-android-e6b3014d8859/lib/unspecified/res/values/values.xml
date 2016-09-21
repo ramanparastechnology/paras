@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/lib/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="blue_gray">#4b636f</color>
+    <color name="dark_gray">#9baab2</color>
+    <color name="dark_grey_color">#4a636f</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="light_gray">#f0f6f9</color>
+    <color name="light_gray_bar">#eaf2f5</color>
+    <declare-styleable name="KeyboardButtonView"><attr format="string" name="lp_keyboard_button_text"/><attr format="integer" name="lp_keyboard_button_image"/><attr format="boolean" name="lp_keyboard_button_ripple_enabled"/><attr format="string" name="lp_pin_forgot_dialog_title"/><attr format="string" name="lp_pin_forgot_dialog_content"/><attr format="string" name="lp_pin_forgot_dialog_positive"/><attr format="string" name="lp_pin_forgot_dialog_negative"/></declare-styleable>
+    <declare-styleable name="PinCodeView"><attr format="integer" name="lp_empty_pin_dot"/><attr format="integer" name="lp_full_pin_dot"/></declare-styleable>
+    <!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/lib/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_pin_code_padding">20dp</dimen>
+    <dimen name="keyboard_button_padding">15dp</dimen>
+    <dimen name="keyboard_button_ripple_padding">30dp</dimen>
+    <dimen name="keyboard_button_text_size">30sp</dimen>
+    <dimen name="light_gray_bar_margin_bottom">5dp</dimen>
+    <dimen name="light_gray_bar_margin_sides">50dp</dimen>
+    <dimen name="light_gray_bar_margin_top">20dp</dimen>
+    <dimen name="pin_code_elements_margin">20dp</dimen>
+    <dimen name="pin_code_forgot_text_size">16sp</dimen>
+    <dimen name="pin_code_logo_margin">30dp</dimen>
+    <dimen name="pin_code_round_margin">10dp</dimen>
+    <dimen name="pin_code_round_size">25dp</dimen>
+    <dimen name="pin_code_round_top_margin">10dp</dimen>
+    <dimen name="pin_code_step_text_size">20sp</dimen>
+    <!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/lib/src/main/res/values/integers.xml -->
+    <eat-comment/>
+    <integer name="ripple_effect_duration">200</integer>
+    <!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/lib/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">lib</string>
+    <string name="button11_large_text">0</string>
+    <string name="button1_large_text">1</string>
+    <string name="button2_large_text">2</string>
+    <string name="button2_small_text">ABC</string>
+    <string name="button3_large_text">3</string>
+    <string name="button3_small_text">DEF</string>
+    <string name="button4_large_text">4</string>
+    <string name="button4_small_text">GHI</string>
+    <string name="button5_large_text">5</string>
+    <string name="button5_small_text">JKL</string>
+    <string name="button6_large_text">6</string>
+    <string name="button6_small_text">MNO</string>
+    <string name="button7_large_text">7</string>
+    <string name="button7_small_text">PQRS</string>
+    <string name="button8_large_text">8</string>
+    <string name="button8_small_text">TUV</string>
+    <string name="button9_large_text">9</string>
+    <string name="button9_small_text">WXYZ</string>
+    <string name="pin_code_forgot_text">Forgot?</string>
+    <string name="pin_code_step_change">Enter your current %d-digit Pincode</string>
+    <string name="pin_code_step_create">Create a %d-digit Pincode</string>
+    <string name="pin_code_step_disable">Disable %d-digit Pincode</string>
+    <string name="pin_code_step_enable_confirm">Confirm your %d-digit Pincode</string>
+    <string name="pin_code_step_unlock">Enter your %d-digit Pincode</string>
+</resources>
