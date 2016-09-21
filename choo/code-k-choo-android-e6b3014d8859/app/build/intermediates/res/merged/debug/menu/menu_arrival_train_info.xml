@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:id="@+id/arrival_information"
+        android:orderInCategory="100"
+        android:icon="@drawable/info_tool"
+        android:title="Title"
+        app:showAsAction="ifRoom"/>
+</menu>
+<!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/src/main/res/menu/menu_arrival_train_info.xml -->

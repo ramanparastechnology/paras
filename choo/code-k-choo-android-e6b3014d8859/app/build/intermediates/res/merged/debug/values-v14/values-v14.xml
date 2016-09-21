@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v14/values.xml -->
+    <eat-comment/>
+    <style name="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/abc_text_size_button_material</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/build/intermediates/exploded-aar/uk.me.lewisdeane.ldialogs/ldialogs/1.2.0/res/values-v14/values.xml -->
+    <eat-comment/>
+    <style name="LDialogs_Dark" parent="android:Theme.Holo">
+
+    </style>
+    <style name="LDialogs_Light" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.0/res/values-v14/values.xml -->
+    <eat-comment/>
+    <style name="Platform.AppCompat" parent="Platform.V14.AppCompat"/>
+    <style name="Platform.AppCompat.Light" parent="Platform.V14.AppCompat.Light"/>
+    <style name="Platform.V14.AppCompat" parent="Platform.V12.AppCompat">
+        <item name="android:actionModeSelectAllDrawable">?actionModeSelectAllDrawable</item>
+
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+    <style name="Platform.V14.AppCompat.Light" parent="Platform.V12.AppCompat.Light">
+        <item name="android:actionModeSelectAllDrawable">?actionModeSelectAllDrawable</item>
+
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+</resources>

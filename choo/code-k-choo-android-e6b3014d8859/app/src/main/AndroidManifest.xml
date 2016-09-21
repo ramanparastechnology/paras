@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paras.choo" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- permission needed to check app state background / foreground -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--
+      IMPORTANT: Change "info.androidhive.parsenotifications.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.paras.choo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.paras.choo.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".ChooApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ap_icon"
+        android:installLocation="auto"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider435068973344085"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB-QAvAdIW1KHYuDqdd3Le5zmP8e7bmWFg" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"  >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+
+        <!-- android:windowSoftInputMode="adjustResize" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <activity
+            android:name=".MyDataInfoActivity"
+            android:label="@string/title_activity_my_data_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RefundCheckInfoActivity"
+            android:label="@string/title_activity_refund_check_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FaqActivity"
+            android:label="@string/title_activity_faq"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Privacy"
+            android:label="@string/title_activity_privacy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TermsandConditions"
+            android:label="@string/title_activity_termsand_conditions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ArrivalTrainInfoActivity"
+            android:label="@string/title_activity_arrival_train_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DepartureTrainInfoActivity"
+            android:label="@string/title_activity_departure_train_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TransitionInfoActivity"
+            android:label="@string/title_activity_transition_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BankAccountInfoActivity"
+            android:label="@string/title_activity_bank_account_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BahnTimeCardInfoActivity"
+            android:label="@string/title_activity_bahn_time_card_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PersonalAndBankDataInfoActivity"
+            android:label="@string/title_activity_personal_and_bank_data_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OverviewInfoActivity"
+            android:label="@string/title_activity_overview_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SendRequestInfoActivity"
+            android:label="@string/title_activity_send_request_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TicketScanInfoActivity"
+            android:label="@string/title_activity_ticket_scan_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TermsAndCondSendReqActivity"
+            android:label="@string/title_activity_terms_and_cond_send_req"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CustomPinActivity"
+            android:label="Choo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShareFriendsInfoActivity"
+            android:label="@string/title_activity_share_friends_info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ViewFlipperActivity"
+            android:label="@string/title_activity_view_flipper"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".fragments.StartActivity"
+            android:label="@string/title_activity_start"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChooTicketActivity"
+            android:label="@string/title_activity_choo_ticket"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f73e07400137c211a141dde8f6973a4fe0bcf88a" />
+
+        <!-- Added for Parse push notifications -->
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name=".receiver.CustomPushReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "info.androidhive.parsenotifications" to match your app's package name. -->
+                <category android:name="com.paras.choo" />
+            </intent-filter>
+        </receiver>
+
+        <!-- /Added for Parse push notifications -->
+        <activity
+            android:name=".LockActivity"
+            android:label="@string/title_activity_app_lock"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ConfirmLockActivity"
+            android:label="@string/title_activity_confirm_lock"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ChangeLockActivity"
+            android:label="@string/title_activity_change_lock"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".UnlockActivity"
+            android:label="@string/title_activity_unlock"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <solid android:color="#000000" />
+</shape><!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/src/main/res/drawable/shape.xml -->

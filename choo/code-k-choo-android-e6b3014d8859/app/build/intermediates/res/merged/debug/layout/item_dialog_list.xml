@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_dialog_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:minHeight="56dp"
+    tools:text="Item"
+    android:textSize="18sp"
+    android:gravity="left|center"/><!-- From: file:/Users/stoyan/git/L-Dialogs/app/src/main/res/layout/item_dialog_list.xml --><!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/build/intermediates/exploded-aar/uk.me.lewisdeane.ldialogs/ldialogs/1.2.0/res/layout/item_dialog_list.xml -->

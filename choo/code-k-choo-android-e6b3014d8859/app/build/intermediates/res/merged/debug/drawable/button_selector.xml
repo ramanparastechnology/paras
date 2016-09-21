@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/LDialogs_dim_lighter_gray"
+        android:state_pressed="true"/>
+    <item
+        android:drawable="@color/LDialogs_transparent"/>
+
+</selector><!-- From: file:/Users/stoyan/git/L-Dialogs/app/src/main/res/drawable/button_selector.xml --><!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/build/intermediates/exploded-aar/uk.me.lewisdeane.ldialogs/ldialogs/1.2.0/res/drawable/button_selector.xml -->

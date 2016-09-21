@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:textColor="#000000"/>
+</LinearLayout><!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/src/main/res/layout/popup_item.xml -->

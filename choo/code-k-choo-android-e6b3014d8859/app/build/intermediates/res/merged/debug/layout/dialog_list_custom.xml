@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_list_custom_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:padding="8dp"
+        android:visibility="visible"/>
+
+    <ListView
+        android:id="@+id/dialog_list_custom_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#0000"/>
+
+</LinearLayout><!-- From: file:/Users/stoyan/git/L-Dialogs/app/src/main/res/layout/dialog_list_custom.xml --><!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/build/intermediates/exploded-aar/uk.me.lewisdeane.ldialogs/ldialogs/1.2.0/res/layout/dialog_list_custom.xml -->

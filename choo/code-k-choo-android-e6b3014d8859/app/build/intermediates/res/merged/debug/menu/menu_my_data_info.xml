@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.chooapp.MyDataInfoActivity">
+    <item
+        android:id="@+id/action_done"
+        android:title="@string/action_done"
+        app:showAsAction="always"/>
+</menu>
+<!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/src/main/res/menu/menu_my_data_info.xml -->

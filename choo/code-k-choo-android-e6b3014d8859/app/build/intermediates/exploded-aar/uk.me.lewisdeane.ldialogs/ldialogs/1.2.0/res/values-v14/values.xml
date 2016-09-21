@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/stoyan/git/L-Dialogs/app/src/main/res/values-v14/styles.xml -->
+    <eat-comment/>
+    <style name="LDialogs_Dark" parent="android:Theme.Holo">
+
+    </style>
+    <style name="LDialogs_Light" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

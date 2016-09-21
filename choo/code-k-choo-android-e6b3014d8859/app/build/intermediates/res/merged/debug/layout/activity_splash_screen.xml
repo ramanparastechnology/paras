@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/app_theme"
+    tools:context="com.chooapp.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/trainmain"/>
+
+</LinearLayout>
+<!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/src/main/res/layout/activity_splash_screen.xml -->

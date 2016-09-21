@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/ICE"
+        android:title="ICE"
+        android:visible="true"/>
+    <item
+        android:id="@+id/IC"
+        android:title="IC"
+        android:visible="true"/>
+    <item
+        android:id="@+id/IRE"
+        android:title="IRE"
+        android:visible="true"/>
+    <item
+        android:id="@+id/RE"
+        android:title="RE"
+        android:visible="true"/>
+    <item
+        android:id="@+id/RB"
+        android:title="RB"
+        android:visible="true"/>
+</menu><!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/src/main/res/menu/popupmenu.xml -->

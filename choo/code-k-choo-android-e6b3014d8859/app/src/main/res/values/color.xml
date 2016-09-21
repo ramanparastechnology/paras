@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme">#3DA7C7</color>
+    <color name="drawer_back">#333D3D</color>
+    <color name="app_theme_light">#eaf4f8</color>
+    <color name="black">#000000</color>
+    <color name="blue">#057dff</color>
+    <color name="statecolor">#e8a867</color>
+    <color name="statecolorthree">#A9C895</color>
+    <color name="statecolornine">#E17777</color>
+</resources>

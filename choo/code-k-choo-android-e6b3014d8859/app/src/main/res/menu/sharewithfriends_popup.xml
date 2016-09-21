@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--<item-->
+        <!--android:id="@+id/recommend"-->
+        <!--android:title="Recommend to friends via"-->
+        <!--android:visible="true"/>-->
+    <item
+        android:id="@+id/eMail"
+        android:title="eMail"
+        android:visible="true"/>
+    <item
+        android:id="@+id/Facebook"
+        android:title="Facebook"
+        android:visible="true"/>
+    <item
+        android:id="@+id/Twitter"
+        android:title="Twitter"
+        android:visible="true"/>
+    <item
+        android:id="@+id/Message"
+        android:title="@string/msg"
+        android:visible="true"/>
+    <item
+        android:id="@+id/cancel"
+        android:title="@string/cancel"
+        android:visible="true"/>
+</menu>

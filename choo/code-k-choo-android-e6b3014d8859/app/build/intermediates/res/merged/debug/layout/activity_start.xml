@@ -1,0 +1,9 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/app_theme"
+    tools:context="com.chooapp.fragments.StartActivity">
+
+
+</RelativeLayout>
+<!-- From: file:/E:/Choo%2011-03-16/code-k-choo-android-e6b3014d8859/app/src/main/res/layout/activity_start.xml -->
